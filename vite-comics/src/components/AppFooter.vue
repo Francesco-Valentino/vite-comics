@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <h1>
-            App Footer
-        </h1>
-    </div>
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
 </template>
 
 <script>

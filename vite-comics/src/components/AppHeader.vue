@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <h1>
-            App Header
-        </h1>
-    </div>
+    <header>
+        <div class="container">
+            
+        </div>
+    </header>
 </template>
 
 <script>
@@ -13,5 +13,5 @@ export default {
 </script>
 
 <style lang="scss">
-    
+
 </style>
