@@ -1,5 +1,4 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 
 export default{
   data() {
@@ -9,7 +8,7 @@ export default{
   },
 
   components: {
-    HelloWorld,
+
 }
 }
 </script>
