@@ -83,6 +83,8 @@ export default {
     nav.container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: .7rem;
 
         div#brandLogo img{
             width: 70px;
