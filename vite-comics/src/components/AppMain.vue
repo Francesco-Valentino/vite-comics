@@ -1,10 +1,12 @@
 <template>
     <main>
         <div>
+            <div class="jumbotron">
+                <img src="../assets/img/jumbotron.jpg" alt="DC Comics Jumbotron">
+            </div>
+
             <section id="upperMain">
-                <h1 class="container">
-                    ---Content goes here---
-                </h1>
+                
             </section>
 
             <section id="actionsBar">
@@ -33,6 +35,17 @@ export default {
         color: white;
         }
     }
+
+    div.jumbotron{
+            height: 250px;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
 
     section#actionsBar{
         height: 140px;
