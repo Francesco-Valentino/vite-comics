@@ -111,10 +111,10 @@ export default {
 
     div.colWrap{
         display: flex;
+        margin-left: 10rem;
 
         div.column{
-            margin-top: 2rem;
-            margin-right: 1rem;
+            margin: 2rem 1rem 0 1rem;
 
             article.footerArticle{
                 margin-bottom: 1.4rem;
