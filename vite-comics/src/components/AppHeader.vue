@@ -6,65 +6,11 @@
             </div>
 
             <div id="navigation">
-                <div class="element">
+                <div v-for="element in navElements" class="element">
                     <p>
-                        Characters
+                        {{ element }}
                     </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Comics
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Movies
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        TV
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                    Games
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Collectibles
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Videos
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Fans
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        News
-                    </p>
-                </div>
-
-                <div class="element">
-                    <p>
-                        Shop
-                    </p>
-                </div>
+                </div>            
             </div>
         </nav>
     </header>
@@ -73,6 +19,23 @@
 <script>
 export default {
     name: "AppHeader",
+
+    data(){
+        return{
+            navElements: [
+            "Characters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Collectibles",
+            "Videos",
+            "Fans",
+            "News",
+            "Shop"
+            ]
+        }
+    },
 }
 </script>
 
