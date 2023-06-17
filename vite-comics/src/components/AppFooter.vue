@@ -2,27 +2,49 @@
     <footer>
         <section id="upperFooter">
 
-            <div class="container">
+            <div class="container colWrap">
                 <div class="column">
                     <article class="footerArticle">
                         <h5>
-                            Lorem
+                            DC Comics
                         </h5>
 
-                        <p>
-                            Ipsum
+                        <p v-for="dcComicsEl in dcComicsFooterEl">
+                            {{ dcComicsEl }}
                         </p>
+                    </article>
 
-                        <p>
-                            Ipsum
+                    <article class="footerArticle">
+                        <h5>
+                            Shop
+                        </h5>
+
+                        <p v-for="shopEl in shopFooterEl">
+                            {{ shopEl }}
                         </p>
+                    </article>
+                </div>
 
-                        <p>
-                            Ipsum
+                <div class="column">
+                    <article class="footerArticle">
+                        <h5>
+                            DC
+                        </h5>
+
+                        <p v-for="dcEl in dcFooterEl">
+                            {{ dcEl }}
                         </p>
+                    </article>
+                </div>
 
-                        <p>
-                            Ipsum
+                <div class="column">
+                    <article class="footerArticle">
+                        <h5>
+                            Sites
+                        </h5>
+
+                        <p v-for="sitesEl in sitesFooterEl">
+                            {{ sitesEl }}
                         </p>
                     </article>
                 </div>
@@ -39,12 +61,66 @@
 <script>
 export default {
     name: "AppFooter",
+
+    data(){
+        return{
+            dcComicsFooterEl: [
+                "Characters",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Videos",
+                "News"
+            ],
+
+            shopFooterEl: [
+                "Shop DC",
+                "Shop DC Collectibles"
+            ],
+
+            dcFooterEl: [
+                "Terms Of Use",
+                "Privacy policy (new)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscriptions",
+                "Talent Workshops",
+                "CPSC Certificates",
+                "Ratings",
+                "Shop Help",
+                "Contact Us"
+            ],
+
+            sitesFooterEl: [
+                "DC",
+                "MAD Magazine",
+                "DC Kids",
+                "DC Universe",
+                "DC Power Visa"
+            ]
+        }
+    },
 }
 </script>
 
 <style lang="scss">
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
+
+    div.colWrap{
+        display: flex;
+
+        div.column{
+            margin-top: 2rem;
+            margin-right: 1rem;
+
+            article.footerArticle{
+                margin-bottom: 1.4rem;
+            }
+        }
+    }
 
     section#upperFooter{
         background-image: url("../assets/img/footer-bg.jpg");
