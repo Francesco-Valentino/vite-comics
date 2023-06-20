@@ -6,7 +6,7 @@
             </div>
 
             <section id="upperMain">
-                
+                <ComicsList/>
             </section>
 
             <section id="actionsBar">
@@ -17,8 +17,14 @@
 </template>
 
 <script>
+import ComicsList from './ComicsList.vue';
+
 export default {
     name: "AppMain",
+
+    components: {
+        ComicsList,
+    },
 }
 </script>
 
