@@ -32,7 +32,6 @@ export default {
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
     section#upperMain{
-        height: 100px;
         background-color: #1C1C1C;
         display: flex;
         align-items: center;

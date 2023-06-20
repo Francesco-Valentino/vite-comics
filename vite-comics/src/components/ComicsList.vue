@@ -1,8 +1,8 @@
 <template>
     <div class="container">
             <SingleComic v-for="element in comicsList"
-            thumbnail=element.thumb
-            name="element.series"
+            :thumbnail="element.thumb"
+            :name="element.series"
             /> 
     </div>
 </template>
